@@ -33,25 +33,26 @@ Components can be registered using the `.component()` method of an AngularJS mod
   * The name of the Component (as string).
   * The Component config object. (Note that, unlike the `.directive()` method, this method does **not** take a factory function.)
   
-  ```js
-    import angular from 'angular';
-    
-    const mortgageForm = {
-      template: `
-        <form>
-          {{ $ctrl.applicant | json }}
-        </form>
-      `,
-      controller() {
-        this.applicant = {
-          name: 'Todd Motto',
-          email: 'todd@toddmotto.com'
-        };
-      }
-    };
+ Example:
+ ```js
+   import angular from 'angular';
 
-    angular.module('app').component('mortgageForm', mortgageForm);
-  ```
+   const mortgageForm = {
+     template: `
+       <form>
+         {{ $ctrl.applicant | json }}
+       </form>
+     `,
+     controller() {
+       this.applicant = {
+         name: 'Todd Motto',
+         email: 'todd@toddmotto.com'
+       };
+     }
+   };
+
+   angular.module('app').component('mortgageForm', mortgageForm);
+ ```
 
 ## Creating and configuring a Component with ng-component-api
 
