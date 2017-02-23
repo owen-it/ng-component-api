@@ -1,6 +1,6 @@
 # ng-component-api
 
-Provides an extra layer for register AngularJs components.
+Provides an extra layer for register AngularJs components `v1.5.x`.
 
 # Install
 
