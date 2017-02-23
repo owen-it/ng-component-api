@@ -1,0 +1,24 @@
+{
+  "name": "ng-component-api",
+  "version": "0.0.1",
+  "description": "Ng Component Api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "component",
+    "api"
+  ],
+  "files": [
+    "index.js",
+    "utils.js"
+  ],
+  "homepage": "https://github.com/owen-it/ng-component-api",
+  "bugs": {
+    "url": "https://github.com/owen-it/ng-component-api/issues"
+  },
+  "author": "Antério Vieira <anteriovieira@gmail.com>",
+  "license": "MIT"
+}
