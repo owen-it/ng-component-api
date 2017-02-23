@@ -51,7 +51,7 @@ Components can be registered using the `.component()` method of an AngularJS mod
      }
    };
 
-   angular.module('app').component('mortgageForm', mortgageForm);
+   angular.module('app', []).component('mortgageForm', mortgageForm);
  ```
 
 ## Creating and configuring a Component with ng-component-api
@@ -124,6 +124,8 @@ tabs-component.js
 
 ```
 
+
+app.js
 ```js
   import angular from 'angular';
   import compApi from 'ng-component-api';
@@ -135,8 +137,7 @@ tabs-component.js
   import other from 'other-component.js';
   
   // Regiter component
-  angular.module('someModule', []).components({ tabs, other })
-  
+  angular.module('app', []).components({ tabs, other });
 ```
 
 tabs.html
